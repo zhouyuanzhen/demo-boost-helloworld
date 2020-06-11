@@ -13,3 +13,16 @@ Upper:   YUANZHEN ZHOU
 Lower:   yuanzhen zhou
 Chinese: 元真大师👨‍🦲
 ```
+
+## Use CMake
+
+```shell
+rm -fr build
+mkdir -p build; cd build
+
+cmake ..; make
+
+./boost-helloworld
+
+cd -
+```
