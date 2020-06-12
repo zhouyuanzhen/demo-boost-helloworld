@@ -28,7 +28,7 @@ jobs:
       run: build/boost-helloworld
     # upload artifact with our binary
     - name: Upload the binary
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v2
       with:
-        name: upload binary
+        name: boost-helloworld
         path: build/boost-helloworld
