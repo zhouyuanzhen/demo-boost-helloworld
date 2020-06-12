@@ -21,6 +21,14 @@ jobs:
       run: cmake -Bbuild -H.
     - name: cmake make
       run: cmake --build build/ --target all
+      env:
+        MAKEFLAGS: "-j2"
     # run tests
     - name: run the test
       run: build/boost-helloworld
+    # upload artifact with our binary
+    - name: Upload the binary
+      uses: actions/upload-artifact@v1
+      with:
+        name: upload binary
+        path: build/boost-helloworld
