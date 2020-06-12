@@ -1,5 +1,7 @@
 # README
 
+![Workflow Status](https://github.com/zhouyuanzhen/demo-boost-helloworld/workflows/default/badge.svg)
+
 A demo boost C++ application example project.
 
 ## QuickStart
@@ -17,12 +19,14 @@ Chinese: 元真大师👨‍🦲
 ## Use CMake
 
 ```shell
-rm -fr build
-mkdir -p build; cd build
+echo "Remove old build folder"; rm -fr build
+echo "Create new build folder"; mkdir -p build
 
-cmake ..; make
+echo "Run cmake & make"
+cmake -Bbuild -H.
+cmake --build build/ --target all
 
-./boost-helloworld
-
-cd -
+echo "Run the test"; build/boost-helloworld
 ```
+
+Enjoy ;)

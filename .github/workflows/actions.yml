@@ -1,4 +1,4 @@
-name: build and run tests
+name: default
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     # install dependencies
-    - name: install boost
+    - name: install boost and related packages
       run: sudo apt-get update && sudo apt-get install -yq libboost-all-dev
     # build project
-    - name: mkdir build folder
+    - name: create the build folder
       run: mkdir build
     - name: cmake build
       run: cmake -Bbuild -H.
