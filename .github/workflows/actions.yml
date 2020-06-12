@@ -8,19 +8,19 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
     # install dependencies
-    - name: boost
+    - name: install boost
       run: sudo apt-get update && sudo apt-get install -yq libboost-all-dev
     # build project
-    - name: mkdir
+    - name: mkdir build folder
       run: mkdir build
     - name: cmake build
       run: cmake -Bbuild -H.
     - name: cmake make
       run: cmake --build build/ --target all
     # run tests
-    - name: run test
+    - name: run the test
       run: build/boost-helloworld
