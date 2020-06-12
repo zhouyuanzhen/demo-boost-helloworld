@@ -1,6 +1,6 @@
 # README
 
-![Mater Branch Workflow Status](![default](https://github.com/zhouyuanzhen/demo-boost-helloworld/workflows/default/badge.svg?branch=master))
+![Mater Branch Workflow Status](https://github.com/zhouyuanzhen/demo-boost-helloworld/workflows/default/badge.svg?branch=master)
 
 A demo boost C++ application example project.
 
