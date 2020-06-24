@@ -19,9 +19,6 @@ Chinese: 元真大师👨‍🦲
 ## Use CMake
 
 ```shell
-echo "Remove old build folder"; rm -fr build
-echo "Create new build folder"; mkdir -p build
-
 echo "Run cmake & make"
 cmake -Bbuild -H.
 cmake --build build/ --target all
